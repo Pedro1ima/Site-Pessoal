@@ -1,0 +1,433 @@
+/*ESTRUTURA DO SITE
+******************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    font-family: monospace, "Nunito", sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*HEADER
+******************************************************/
+#logo h1{
+    float: left;
+    background: url(imagens/2.png) no-repeat;
+    width: 309px;
+    height: 120px;
+    text-indent: -9999px;
+}
+header{
+    padding-top: 15px;
+    height: 135px;
+    background: black;
+}
+nav{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    bottom: 25px;
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+nav li{
+    display: inline;
+    margin: 10px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+#nav-contato a{
+    background: linear-gradient(45deg,rgb(188, 111, 255) 0%,rgb(136, 0, 255) 100%);
+    margin-left: 60px;
+    transition: all 0.5s ease;
+
+}
+nav a:hover{
+    color: blueviolet;
+}
+#nav-contato a:hover{
+    background: linear-gradient(45deg,rgb(136, 0, 255) 0%,rgb(188, 111, 255) 100%);
+    color: #fff;
+}
+
+
+
+
+
+
+/*CONTEUDO
+******************************************************/
+
+/*CONTEUDO DA CAIXA 1
+*********************************/
+#caixa1{
+    background: linear-gradient(to top, blueviolet, black, black, black, black, black, black, black, black, black, black, black, black);
+    height: 550px;
+    width: 100%;
+    display: flex;
+}
+#tri-imagem{
+    flex-direction: row;
+    position: relative;
+    top: 9%;
+    left: 55%;
+}
+#tri-imagem img{
+    max-width: 100%;
+    width: 250px;
+    border-radius: 20px;
+    margin-left: 15px;
+    border: 2px solid blueviolet;
+    transition: 0.5s;
+
+}
+.-imagem{
+    height: 325px;    
+}
+
+#tri-imagem img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+
+
+
+#texto-principal{
+    float: left;
+    position: relative;
+    right: 35%;
+    top: 8%;
+}
+#texto-principal h1{
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 70px;
+    text-indent: 3px;
+    line-height: 35px;
+}
+#texto-principal span{
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+#texto-principal span:hover{
+    display: inline-block;
+    transform: translateY(-0.3em);
+    cursor: default;
+}
+#ponto-final{ 
+    color: blueviolet;
+}
+#texto-principal a{
+    top: 130px;
+    left: 43%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.button{
+    padding: 1rem 2rem;
+    color: black;
+    background: blueviolet;
+    background: linear-gradient(45deg,rgb(255, 255, 255) 0%,rgb(205, 165, 240) 100%);
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 30px;
+    position: relative;
+    text-decoration: none;
+}
+#texto-principal a:hover{
+    background: linear-gradient(45deg,rgb(205, 165, 240) 0%,rgb(255, 255, 255) 100%);
+}
+
+/*CONTEUDO DA CAIXA 2
+*********************************/
+#caixa2{
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background: url(imagens/parallax1.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+}
+
+
+/*CONTEUDO DA CAIXA 3
+*********************************/
+#caixa3{
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(to bottom, blueviolet, black, black, black, black, black, black, black, black, black, black, black, black);
+    color: white;
+}
+
+.quadro{
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: justify;
+}
+.quadro h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2rem;
+    /*Aplicando o Degrade diretamente no texto*/
+    background: linear-gradient(to bottom,rgb(255, 255, 255) 0%,rgb(100, 0, 188) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.quadro p{
+    line-height: 22.5px;
+    color: #fff;
+}
+.quadro img{
+    width: 227px;
+    height: 357px;
+    border: 2px solid #fff;
+    float: left;
+    margin-right: 25px;
+}
+.quadro img:hover{
+    opacity: 0.7;
+}
+.redes-sociais{
+    margin-left: 12px;
+}
+.redes-sociais li{
+    list-style: none;
+    display: inline;
+}
+.redes-sociais a{
+    color: white;
+    text-decoration: none;
+    background: blue;
+}
+.redes-sociais img{
+    margin: 0 3px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.redes-sociais img:hover{
+    scale: 1.15;
+    transition: 0.5s;
+}
+
+/*CONTEUDO DA CAIXA 4
+*********************************/
+#caixa4{
+    width: 100%;
+    height: 760px;
+    background: black;
+    color: white;
+    padding-top: 175px;
+}
+#sub-caixa4{
+    margin: 0 auto;
+    width: 90%;
+    height: 500px;
+    background: black;
+}
+#sub-caixa4 h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2rem;
+    padding: 20px;
+    /*Aplicando o Degrade diretamente no texto*/
+    background: linear-gradient(to bottom,rgb(255, 255, 255) 0%,rgb(100, 0, 188) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin: 25px;
+}
+#sub-sub4{
+    margin: 0 auto;
+    width: 95%;
+    height: 400px;
+}
+
+
+#conteudo4{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: blueviolet;
+}
+.item{
+    width: 600px;
+    height: 250px;
+    margin: 15px;
+    padding: 15px;
+    text-align: justify;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+.item img{
+    width: 75px;
+    height: 75px;
+}
+.item h2{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.item p{
+    color: white;
+}
+.item:hover{
+    box-shadow: 3px 3px 10px white;
+}
+
+.efeito-roxo{
+    background: linear-gradient(to top, blueviolet, black, black);
+    width: 100%;
+    height: 100px;
+}
+/*CONTEUDO DA CAIXA 5
+*********************************/
+#caixa5{
+    /*Efeito parallax*/
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background: url(imagens/fundo\ portfolio.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+}
+
+/*CONTEUDO DA CAIXA 6
+*********************************/
+#caixa6{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, blueviolet, black, black, black, black, black, black, black, black, black, black, black, black, black, black, black, black, black, black, black);
+    color: white;
+}
+#sub-caixa6{
+    margin: 0 auto;
+    width: 90%;
+    color: blueviolet;
+
+}
+#caixa6 h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2rem;
+    padding: 0px 20px 20px 20px;
+    /*Aplicando o Degrade diretamente no texto*/
+    background: linear-gradient(to bottom,rgb(255, 255, 255) 0%,rgb(100, 0, 188) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin: 0 25px 25px 25px;
+}
+
+#projetos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#sub-caixa6 h2{
+    margin: 0 auto;
+    width: 50%;  
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+.item-port{
+    border: 1px solid white;
+    width: 40%;
+    height: 250px;
+    background: #fff;
+    text-align: justify;
+    margin: 30px 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.item-port:hover{
+    transform: scale(1.1);
+}
+.item-port h4{
+    text-align: center;
+    padding: 2%;
+    color: black;
+    background: rgb(229, 200, 255);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -14%;
+    left: 33%;
+    width: 30%;
+    opacity: 0.9;
+}
+
+.port-1{
+    background: url(imagens/port-1.png) no-repeat top left;
+    background-size: cover;
+}
+.port-2{
+    background: url(imagens/port-2.png) no-repeat top left;
+    background-size: cover;
+}
+.port-3{
+    background: url(imagens/port-3.png) no-repeat top left;
+    background-size: cover;
+}
+.port-4{
+    background: url(imagens/port-4.png) no-repeat top left;
+    background-size: cover;
+}
+.port-5{
+    background: url(imagens/port-5.png) no-repeat top left;
+    background-size: cover;
+}
+.port-6{
+    background: url(imagens/port-6.png) no-repeat top left;
+    background-size: cover;
+}
+
+
+
+
+
+/*FOOTER
+******************************************************/
+
