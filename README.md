@@ -1,7 +1,7 @@
 <h1>Meu Site</h1>
 
 <h2> Sobre</h2>
-<p>Projeto desenvolvido para funcionar como um portfólio pessoal, onde mesclarei meu currículo com meus projetos desenvolvidos.</p>
+<p>Projeto com o objetivo de ser meu portfólio, onde incluirei meu currículo junto aos meus projetos desenvolvidos.</p>
 
 ##  Tecnologias
 <div>
